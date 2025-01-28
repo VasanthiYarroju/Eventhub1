@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;  /* Enable smooth scrolling for anchor links */
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.login-btn {
+    padding: 10px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('backdroping.jpg') center/cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #c9efe6;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+  
+  .service-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.service-items p {
+    position: relative;
+    background-color: #df386d;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    padding: 10px 15px; /* Padding for the ribbon */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    clip-path: polygon(0% 30%, 25% 0%, 75% 0%, 100% 30%, 100% 100%, 0% 100%);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 250px; /* Fixed width for all ribbons */
+    height: 50px; /* Fixed height for all ribbons */
+    margin: 0 auto; /* Center the ribbon within its grid cell */
+
+}
+
+.service-items p:hover {
+    transform: scale(1.05);
+}
+
+
+  
+  .other-services-btn {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #111210;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /*al Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+#about-us {
+    padding: 3rem 1rem;
+    background-color: #c9efe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.about-us .about-content {
+    flex: 1;
+    max-width: 500px;
+    font-family: Georgia, serif;
+}
+
+.about-us .about-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.about-us .about-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-us .about-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 600px;
+    padding-top: 3rem; /* Increased padding at the top */
+}
+
+.about-images img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+}
